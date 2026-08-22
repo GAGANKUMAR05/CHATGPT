@@ -1,10 +1,11 @@
 import express from 'express'
+import { registerController } from '../controllers/auth.controllers';
 
 const authRoutes = express.Router();
 
 
 
-authRoutes.post('/register',)
+authRoutes.post('/register',registerController)
 
 
 

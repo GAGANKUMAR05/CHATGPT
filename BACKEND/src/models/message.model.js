@@ -4,11 +4,13 @@ import mongoose from 'mongoose'
 const messageSchema = new mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:'user'
+        ref:'user',
+        required:true
     },
     chat:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:'chat'
+        ref:'chat',
+        required:true
     },
     content:{
         type:String,
